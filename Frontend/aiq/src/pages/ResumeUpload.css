@@ -1,0 +1,37 @@
+.upload-container {
+    display: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full height of the viewport */
+  }
+  
+  .upload-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .drop-zone {
+    border: 2px dashed #007bff;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    width: 600px; /* Set a width for the drop zone */
+    height: 300px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .drop-zone:hover {
+    background-color: #f0f8ff; /* Light background on hover */
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 20px;
+    color: #ffff;
+    background-color: deepskyblue;
+  }
