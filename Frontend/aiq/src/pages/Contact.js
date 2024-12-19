@@ -21,7 +21,7 @@ const Contact = () => {
     };
 
     // Fetch request to Google Apps Script web app URL
-    fetch('https://script.google.com/macros/s/AKfycbzyxkPPDjxbOxjBjOzl-HhnVykKL0LEg4Kyxz6d23rphh-clNgP5SLe8rUOk7K1lHfMhA/exec', {
+    fetch('Your Google Apps Script web APP url', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
