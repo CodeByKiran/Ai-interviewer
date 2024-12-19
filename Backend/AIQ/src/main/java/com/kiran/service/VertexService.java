@@ -26,7 +26,7 @@ public class VertexService {
     @PostConstruct
     public void init() throws IOException {
 
-        vertexAi = new VertexAI("jfsd-441005", "us-central1");
+        vertexAi = new VertexAI("Your project id ", "us-central1");
 
         GenerationConfig generationConfig = GenerationConfig.newBuilder()
                 .setMaxOutputTokens(8192)
