@@ -18,7 +18,7 @@ const Footer = () => {
       }}
     >
       <Typography variant="body2" color="textSecondary">
-        © {new Date().getFullYear()} AI-Interviewer.  Made by kanyaraasi <span>❤️</span> All rights reserved.
+        © {new Date().getFullYear()} AI-Interviewer.  Made by SaiKiran <span>❤️</span> All rights reserved.
       </Typography>
     </Box>
   );

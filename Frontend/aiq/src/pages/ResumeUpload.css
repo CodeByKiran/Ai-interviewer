@@ -1,37 +1,114 @@
 .upload-container {
-    display: center;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh; /* Full height of the viewport */
-  }
-  
-  .upload-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .drop-zone {
-    border: 2px dashed #007bff;
-    border-radius: 20px;
-    padding: 20px;
-    text-align: center;
-    width: 600px; /* Set a width for the drop zone */
-    height: 300px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .drop-zone:hover {
-    background-color: #f0f8ff; /* Light background on hover */
-  }
-  
-  button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 20px;
-    color: #ffff;
-    background-color: deepskyblue;
-  }
+  display: flex; /* Fixed: use flex for layout */
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 40px 20px;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.upload-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.drop-zone {
+  border: 2px dashed #007bff;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  width: 600px;
+  height: 200px;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+.drop-zone:hover {
+  background-color: #e6f0ff; /* Lighter blue */
+  border-color: #0056b3;
+}
+
+button {
+  margin-top: 10px;
+  padding: 12px 25px;
+  font-size: 16px;
+  border-radius: 20px;
+  color: #fff;
+  background-color: deepskyblue;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0099ff;
+}
+
+.upload-status {
+  margin-top: 15px;
+  font-weight: 500;
+  color: green;
+  white-space: pre-line; /* For multiline text */
+}
+
+.resume-data {
+  width: 80%;
+  max-width: 900px;
+  margin-top: 30px;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.resume-data h3 {
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 5px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+.resume-data p {
+  margin: 5px 0;
+}
+
+.resume-section ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.resume-section li {
+  margin-bottom: 5px;
+}
+
+
+.take-interview {
+  margin-top: 20px;
+}
+
+.interview-questions {
+  margin-top: 30px;
+  background-color: #f1f7ff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.interview-questions h3 {
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.interview-questions ul {
+  padding-left: 20px;
+}

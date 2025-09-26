@@ -10,8 +10,9 @@ import Contact from './pages/Contact';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Dashboard from './pages/DashBoard';
-import Interview from './pages/Interview';
+import MockInterview from './pages/MockInterview';
 import ResumeUpload from './pages/ResumeUpload';
+import Interview from './pages/Interview'
 import ThemeContextProvider /*,{ ColorModeContext }*/ from './ThemeContext';
 
 const App = () => {
@@ -25,12 +26,13 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/Dashboard" element={<Dashboard />} />
-            <Route path="/interviewOn/:subject" element={<Interview />} />
+            <Route path="/interviewOn/:subject" element={<MockInterview />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
             <Route path="/ResumeUpload" element={<ResumeUpload />} />
+            <Route path="/interview" element={<Interview />} />
           </Routes>
         </div>
       </Router>

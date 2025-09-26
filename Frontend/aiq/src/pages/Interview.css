@@ -1,0 +1,170 @@
+/* Interview Container (No Change) */
+.interview-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    padding: 20px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+}
+
+/* Cam preview (No Change) */
+.cam-preview {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 160px;
+    height: 120px;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    z-index: 1000;
+    background-color: black;
+}
+
+/* Question Section (Original block - will be mostly ignored due to .answer-section, .question-section block later) */
+.question-section {
+    flex: 1;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.question-section h3 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.question-section p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.question-section textarea {
+    width: 100%;
+    height: 120px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    resize: none;
+    font-size: 14px;
+}
+
+.question-section button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 20px;
+    color: #ffffff;
+    background-color: deepskyblue;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.question-section button:hover {
+    background-color: #007bff;
+}
+
+/* Timer (No Change) */
+.timer {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #ff4500;
+    font-size: 16px;
+}
+
+/* Start Interview Page (No Change) */
+.interview-start {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+}
+
+.interview-start button {
+    margin-top: 20px;
+    padding: 15px 25px;
+    font-size: 18px;
+    border-radius: 25px;
+    color: #ffffff;
+    background-color: deepskyblue;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.interview-start button:hover {
+    background-color: #007bff;
+}
+
+.interview-fullscreen {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f9f9f9;
+    overflow: hidden;
+}
+
+/* Cam preview (Fixed for the full-screen layout, no change) */
+.cam-preview {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 160px;
+    height: 120px;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    z-index: 1000;
+}
+
+/* --- UPDATED BLOCK FOR COLUMN SWAP --- */
+.interview-columns {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+    /* KEY CHANGE: Reverses the visual order (Question will be on the left) */
+    flex-direction: row-reverse;
+}
+
+.answer-section,
+.question-section {
+    flex: 1;
+    padding: 40px;
+    overflow-y: auto;
+}
+
+.answer-section textarea {
+    width: 100%;
+    height: 70%;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.navigation-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* --- UPDATED QUESTION SECTION BORDER --- */
+.question-section {
+    background-color: #fff;
+    /* REMOVE the border-right */
+    border-right: none;
+    /* ADD the border-left since Question is now the LEFT column */
+    border-left: 2px solid #007bff;
+}
+
+.timer {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #d9534f;
+}
