@@ -8,7 +8,7 @@ Interactive Interface: A seamless and user-friendly UI built with React, offerin
 Backend Robustness: A Spring Boot-powered backend ensures efficient data handling and integration.
 Customizable Interviews: Users can select their area of expertise, and the AI dynamically adjusts to provide relevant questions.
 Realistic Feedback: Mimics real interview scenarios with questions aimed at testing both fundamental and advanced knowledge.
-Resume Parsing Integration: Upload resumes to extract skills using PDF extraction and provide targeted interview questions.
+Resume Parsing Integration: Upload resumes to extract skills using PDF extraction and provide targeted interview questions which help candidates to prepare better 
 
 
 🛠️ Technologies Used
